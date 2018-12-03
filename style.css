@@ -1,0 +1,141 @@
+
+
+*{ 
+margin: 0; 
+padding: 0; 
+background: #32fc5f;
+}
+body	
+{ 
+font: 14px; 
+font-size: 20px;
+font-family: 'Rakkas', cursive;
+}
+
+#page-wrap {
+padding:1.5em;
+}
+
+#page-wrap
+{
+width: 500px; 
+margin: 0 auto; 
+}
+h1
+{
+margin: 18px 0; 
+font: 14px ;
+font-family: 'Rakkas', cursive;
+text-transform: uppercase; 
+letter-spacing: 3px; 
+color: purple;
+}
+#quiz input 
+{
+vertical-align: middle;
+background: none;
+	color: #ab1b1b;
+	width: 80px;
+	height: 30px;
+	border: 1px solid #33803300;
+	font-size: 15px;
+	border-radius: 4px;
+	transition: .6s;
+	overflow: hidden;
+}
+#quiz input: focus{
+	outline: none;
+}
+#quiz input: before{
+	content:'';
+	display: block;
+	position: absolute;
+	background: rgba(255,255,255,.5);
+	width: 60px;
+	height: 100%;
+	left:0;
+	top:0;
+	opacity: .5s;
+	filter: blur(30px);
+	transform:translateX(-130px) skewX(-15deg);
+}
+#quiz input: after{
+	content:'';
+	display: block;
+	position: absolute;
+	background: rgba(255,255,255,.2);
+	width: 30px;
+	height: 100%;
+	left:30;
+	top: 0;
+	opacity: 0;
+	filter: blur(30px);
+	transform: translate(-100px) scaleX(-15deg);
+}
+#quiz input:hover {
+	background: #6ee078;
+	cursor: pointer;
+}
+#quiz input:hover:before{
+	transform: translate(300px) skewX(-15deg);
+	opacity: .6s;
+	transition: .7s;
+}
+#quiz input:hover:after{
+	transform: translate(300px) skewX(-15deg);
+	opacity: 1;
+	transition: .7s;
+}
+#quiz ol 
+{
+margin: 0 0 10px 20px;
+}
+#quiz ol li
+{
+margin: 0 0 20px 0;
+}
+#quiz ol li div {
+padding: 4px 0;
+}
+
+#quiz h3 {
+   font-size: 22px; margin: 0 0 1px 0; color: #020206;
+}
+
+#results {
+    font: 44px Georgia, Serif;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
