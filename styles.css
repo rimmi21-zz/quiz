@@ -1,0 +1,235 @@
+/* Fonts-
+head: font-family: 'Fascinate Inline', cursive;
+Body: font-family: 'Kalam', cursive; */
+
+html,
+body {
+    margin: 0;
+    background: #151519;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.welcome-box h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Fascinate Inline', cursive;
+}
+
+.welcome-box p {
+    text-align: center;
+    color: rgb(241, 224, 125);
+    font-family: 'Kalam', cursive;
+    font-size: 1.2em;
+}
+
+.top-dots {
+    width: 50%;
+    height: 50%;
+    background-image: url("/images/round.svg");
+    background-repeat: repeat;
+    background-size: 13px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.bottom-stars {
+    width: 50%;
+    height: 50%;
+    background-image: url("/images/cross.svg");
+    background-repeat: repeat;
+    background-size: 13px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.welcome-box {
+    background-color: rgb(49, 46, 46);
+    padding: 1em;
+    position: relative;
+    width: 50%;
+    max-height: 50vh;
+    top: 25vh;
+    left: 25vw;
+    right: 25vh;
+    z-index: 3;
+}
+
+button {
+    background: none;
+    color: #ccc;
+    border: 1px solid #ffb340;
+    font-size: 18px;
+    transition: .6s;
+    overflow: hidden;
+    text-align: center;
+}
+
+.button-main-page {
+    margin: 2em;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.2em;
+}
+
+button:hover,
+button:active {
+    background: #ffe240;
+    color: #423027;
+    cursor: pointer;
+}
+
+button:hover:before {
+    transform: translate(300px) skewX(-15deg);
+    opacity: .6s;
+    transition: .7s;
+}
+
+button:hover:after {
+    transform: translate(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+.container-quiz {
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+    background: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.quiz {
+    background: #ffe240;
+    width: 50%;
+    position: relative;
+    z-index: 3;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+}
+
+.quiz h1 {
+    font-family: 'Fascinate Inline', cursive;
+}
+
+.quiz h3 {
+    font-family: 'Kalam', cursive;
+}
+
+li {
+    font-size: 1em;
+    padding: 1.5em;
+}
+
+
+.submit-button {
+    background: rgb(49, 46, 46);
+    color: #fff;
+    border: 2px solid #ffb340;
+    font-size: 1em;
+    transition: .6s;
+    text-align: center;
+    margin: 2em;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+.submit-button:hover,
+.submit-button:active {
+    background: #ffe240;
+    color: #423027;
+    cursor: pointer;
+}
+
+.submit-button:hover:before {
+    transform: translate(300px) skewX(-15deg);
+    opacity: .6s;
+    transition: .7s;
+}
+
+.submit-button:hover:after {
+    transform: translate(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+footer {
+    background: #151519;
+    text-align: center;
+    color: #fff;
+}
+
+@media only screen and (max-width:700px) {
+
+    .welcome-box {
+        width: 80%;
+        position: relative;
+        left: auto;
+        right: auto;
+        top: 20vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .welcome-box h1 {
+        font-size: 1.6em;
+    }
+
+    .welcome-box p {
+        font-size: 1em;
+    }
+
+    .button-main-page {
+        padding: 1em;
+        width: 160px;
+        margin: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .quiz {
+        padding: 1em;
+        width: 70%;
+    }
+
+    li {
+        padding: 0;
+    }
+
+    .quiz h1 {
+        font-size: 1.5em;
+        font-weight: lighter;
+    }
+
+    .quiz h3 {
+        font-size: 1em;
+    }
+
+    .submit-button{
+        width: 160px;
+    }
+}
